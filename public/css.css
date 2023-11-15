@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+.tittle_login {
+  border: 3px solid black;
+  height: 600px;
+  width: 350px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 30px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.form_login {
+  padding: 5px;
+  border: 1px solid black;
+  align-content: center;
+}
+label {
+  font-weight: bold;
+  font-weight: 15px;
+}
+input {
+  height: 40px;
+  width: 250px;
+}
+button {
+  background-color: rgb(39, 167, 218);
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  border-radius: 10px;
+}
+.template {
+  padding: 5px;
+  height: 100px;
+  width: 100px;
+}
+.timetable-generator {
+  padding: 30px 30px;
+  background-color: rgb(228, 20, 20);
+}
+.dashboard-card {
+  background-color: rgb(255, 69, 0);
+  color: white;
+  padding: 30px;
+  display: block;
+  width: 250px;
+  height: 1000%;
+  position: fixed;
+}
+
+.card {
+  padding: 10px 10px;
+  background-color: rgb(255, 69, 0);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.card:hover {
+  background-color: rgb(116, 63, 63);
+}
+h3 {
+  text-align: center;
+}
+.text {
+  text-align: center;
+  color:black;
+}
+.pop{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  color: black;
+  justify-content: center;
+  display: none;
+  align-items: center;
+}
+.popup{
+  height: 450px;
+  width: 550px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+  position: relative;
+
+}
+.register {
+  height: 200px;
+  width: 200px;
+  background-color: skyblue;
+  border-radius: 30px;
+  right: 500px;
+  float: right;
+  top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+
+  position: relative;
+  color: white;
+
+  padding: 30px;
+}
