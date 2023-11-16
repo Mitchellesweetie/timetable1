@@ -1,6 +1,6 @@
 const express=require("express")
 const authcontrollers=require('../controllers/auth')
-const controller=require('../controllers/login')
+const controller=require('../controllers/login.js')
 const router=express.Router()
 const mysql=require('mysql')
 var db=mysql.createConnection({

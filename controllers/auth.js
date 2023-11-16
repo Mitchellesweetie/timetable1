@@ -26,6 +26,7 @@ exports.register = (req, res) => {
       }
       let hashedPassword = await bycrypt.hash(password, 8);
       console.log(hashedPassword);
+
      // res.send("testing");
     }
   );
@@ -43,13 +44,13 @@ exports.register = (req, res) => {
       else
       
        console.log(result);
-       return  res.sendFile(__dirname+'/public/login.html')
+       res.redirect("http://localhost:4500/login.html")
+      
+       
     }
+    
   );
 
-  //res.send("form submitted")
+  
 };
 
-//exports.login=(req,res)=>{
-
-//}

@@ -11,7 +11,7 @@ var db=mysql.createConnection({
 
 router.get('/login',(req,res)=>{
     
-    res.sendFile(__dirname+'/public/login.html')
+    res.redirect("http://localhost:4500/login.html")
 })
 router.get('/signup',(req,res)=>{
     res.sendFile(__dirname+'/public/signup.html')
