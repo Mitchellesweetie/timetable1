@@ -6,47 +6,30 @@
 	<link rel="stylesheet" type="text/css" href="css.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 	
-	<title>Dashboard</title>
+	<title>room</title>
 </head>
 <body>
 
-<div class="register" onclick="myFunction()">
-	<div class="text">
-	<h3 id="button">REGISTER A CLASS<h3></div>
-	
-</div>
+<div class="room" id="button">Register a room</div>
 <div class="pop">
-	<form class="popup" method="post" action="/dashboard">
+	<form class="popup" method="post">
 		<div>
-		<label>School</label><BR>
-		<select class="input3">
-
-		<option>Computer Science</option>
-		<option>School of Law</option>
-	     </select><br>
-	  </div>
-	<div>
-	<label>Department</label><br>
-
-	<select class="input3">
-	    <option>Computer Science</option>
-		<option>Information Technology</option>
-		<option>Education in Information Technology</option>
-	</select><BR>
-   </div>
-	<div>
-		<label>Unit Name</label>
-		<input type="text" name="unitname" required>
-	</div>
-	<div>
-		<label>Unit Code</label>
-		<input type="text" name="unitcode" required>
-	</div>
-	<button>OK</button>
-
+			<label>Building name</label>
+			<input type="TEXT" name="roomname" required>
+		</div>
+		<div>
+			<label>Room Code</label>
+			<input type="text" name="code" required>
+		</div>
+		<div>
+			<label>Number of students</label>
+			<input type="text" name="studentsno" required>
+		</div>
+		
 	</form>
 </div>
-<div class="dashboard-card" >
+
+<div class="dashboard-card">
 	<div class="timetable-generator">TIMETABLE-GENERATOR</div>
 	<div class="dashboard-cards">
 		
@@ -91,5 +74,6 @@
 		document.querySelector(".pop").style.display="flex"
 	})
 </script>
+
 </body>
 </html>

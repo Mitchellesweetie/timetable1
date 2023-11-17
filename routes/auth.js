@@ -1,18 +1,29 @@
-const express=require("express")
-const authcontrollers=require('../controllers/auth')
-const controller=require('../controllers/login.js')
-const router=express.Router()
-const mysql=require('mysql')
-var db=mysql.createConnection({
+const express = require("express");
+const authcontrollers = require("../controllers/auth");
+const lecturer=require("../controllers/lecturer")
+const controller = require("../controllers/login.js");
+const router = express.Router();
+const mysql = require("mysql");
+var db = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "timetable",
+});
 
-    host:"localhost",
-    user:"root",
-    password:"",
-    database:"timetable"
-})
+router.post("/register", authcontrollers.register);
+router.post("/login", controller.login);
 
-router.post('/register',authcontrollers.register)
-router.post('/login',controller.login)
+router.post("/lecturer", lecturer.lecturer);
+
+router.post("/dashboard", (req, res) => {
+
+  
+  db.query("insert into timetable set ?")
+
+  console.log("data saved");
+  res.send("saved");
+});
 /*{
     console.log("The request body is", req.body)
     const data=req.body
@@ -29,5 +40,4 @@ router.post('/login',controller.login)
     
 }*/
 
-
-module.exports=router
+module.exports = router;

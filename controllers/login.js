@@ -14,8 +14,11 @@ exports.login=(req,res)=>{
 
     db.query("select* from signup where email=? and password=?",[username,password],(err,result)=>{
       if(err)throw err
+      
+      if(username==username&&password==password){
+      res.redirect("http://localhost:4500/dashboard.html")}
       else
-      res.redirect("http://localhost:4500/dashboard.html")
+      res.send("kindly register")
       
     })
     
